@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Chatbot</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f6fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .chat-container {
+      width: 480px;
+      height: 650px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .chat-header {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .chat-box {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      background: #f7fafd;
+    }
+    .message {
+      max-width: 75%;
+      margin: 8px 0;
+      padding: 12px 16px;
+      border-radius: 15px;
+      font-size: 15px;
+      line-height: 1.4;
+      word-wrap: break-word;
+    }
+    .user-msg {
+      background: #0077cc;
+      color: white;
+      align-self: flex-end;
+      border-bottom-right-radius: 0;
+    }
+    .bot-msg {
+      background: #e5e5ea;
+      color: black;
+      align-self: flex-start;
+      border-bottom-left-radius: 0;
+    }
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+      background: white;
+    }
+    .chat-input input {
+      flex: 1;
+      border: none;
+      padding: 15px;
+      font-size: 15px;
+      outline: none;
+    }
+    .chat-input button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .chat-input button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">🩺 Healthcare Chatbot</div>
+    <div class="chat-box" id="chat-box">
+      {% if chat_history %}
+        {% for sender, msg in chat_history %}
+          {% if sender == "user" %}
+            <div class="user-msg message">{{ msg }}</div>
+          {% else %}
+            <div class="bot-msg message">{{ msg|safe }}</div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <div class="bot-msg message">👋 Hello! I can help you with diseases, symptoms, medicines, and precautions.<br>Try asking: <i>"What are the symptoms of diabetes?"</i></div>
+      {% endif %}
+    </div>
+    <form method="post" class="chat-input">
+      <input type="text" name="query" placeholder="Type your question..." required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    // Auto-scroll to bottom on new message
+    var chatBox = document.getElementById("chat-box");
+    chatBox.scrollTop = chatBox.scrollHeight;
+  </script>
+</body>
+</html>
