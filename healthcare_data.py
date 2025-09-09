@@ -156,7 +156,198 @@ DISEASE_DB = {
         "precautions": "See doctor if symptoms worsen or breathing difficulty occurs.",
         "serious": False,
         "specialist": "Pulmonologist / General Physician"
+    },
+    "sleepless_night": {
+    "aliases": ["insomnia", "sleepless night", "cannot sleep"],
+    "symptoms": "difficulty falling asleep, waking up during the night, feeling tired in the morning, irritability, poor concentration",
+    "medicines": "Sleep hygiene practices, melatonin supplements, or prescription sleep aids as advised by a doctor.",
+    "precautions": "Maintain a regular sleep schedule, avoid caffeine/alcohol before bed, create a relaxing bedtime routine.",
+    "serious": False,
+    "specialist": "Sleep Specialist / General Physician"
+},
+    
+
+    "common cold": {
+        "aliases": ["cold", "common cold", "runny nose"],
+        "symptoms": "sneezing, runny nose, mild cough, sore throat, mild fatigue",
+        "medicines": "Rest, fluids, paracetamol for fever, decongestants if needed",
+        "precautions": "Wash hands frequently, avoid close contact with sick people",
+        "serious": False,
+        "specialist": "General Physician"
+    },
+
+    "eczema": {
+        "aliases": ["eczema", "atopic dermatitis", "skin rash"],
+        "symptoms": "dry, itchy, red skin, rashes, sometimes oozing",
+        "medicines": "Moisturizers, topical corticosteroids, antihistamines",
+        "precautions": "Avoid triggers, use gentle skincare products",
+        "serious": False,
+        "specialist": "Dermatologist"
+    },
+
+    "psoriasis": {
+        "aliases": ["psoriasis", "skin scaling"],
+        "symptoms": "thick red patches with silvery scales, itching, nail changes",
+        "medicines": "Topical corticosteroids, phototherapy, systemic medications",
+        "precautions": "Avoid stress, maintain skin hydration",
+        "serious": False,
+        "specialist": "Dermatologist"
+    },
+
+    "kidney stones": {
+        "aliases": ["renal calculi", "kidney stones", "renal stone"],
+        "symptoms": "severe flank pain, nausea, vomiting, blood in urine",
+        "medicines": "Pain relief, hydration, sometimes lithotripsy or surgery",
+        "precautions": "Drink plenty of fluids, reduce high-oxalate foods",
+        "serious": True,
+        "specialist": "Urologist"
+    },
+
+    "hepatitis b": {
+        "aliases": ["hepatitis b", "hbv"],
+        "symptoms": "jaundice, fatigue, nausea, abdominal pain, dark urine",
+        "medicines": "Antiviral medications under doctor supervision",
+        "precautions": "Vaccination, avoid alcohol, safe practices",
+        "serious": True,
+        "specialist": "Hepatologist / Infectious Disease Specialist"
+    },
+
+    "hepatitis c": {
+        "aliases": ["hepatitis c", "hcv"],
+        "symptoms": "fatigue, jaundice, abdominal pain, dark urine",
+        "medicines": "Antiviral therapy prescribed by doctor",
+        "precautions": "Avoid sharing needles, safe blood practices",
+        "serious": True,
+        "specialist": "Hepatologist / Infectious Disease Specialist"
+    },
+
+    "gout": {
+        "aliases": ["gout", "arthritis", "uric acid"],
+        "symptoms": "sudden severe joint pain, redness, swelling (often big toe)",
+        "medicines": "NSAIDs, colchicine, lifestyle changes to reduce uric acid",
+        "precautions": "Avoid alcohol and purine-rich foods",
+        "serious": False,
+        "specialist": "Rheumatologist"
+    },
+
+    "obesity": {
+        "aliases": ["obesity", "overweight"],
+        "symptoms": "excess body weight, fatigue, shortness of breath, joint pain",
+        "medicines": "Diet, exercise, behavioral therapy, sometimes surgery",
+        "precautions": "Maintain healthy lifestyle, monitor BMI",
+        "serious": True,
+        "specialist": "Endocrinologist / Dietitian"
+    },
+
+    "hypothyroidism": {
+        "aliases": ["underactive thyroid", "hypothyroidism"],
+        "symptoms": "fatigue, weight gain, cold intolerance, hair loss, constipation",
+        "medicines": "Thyroid hormone replacement (levothyroxine)",
+        "precautions": "Regular check-ups and medication adherence",
+        "serious": True,
+        "specialist": "Endocrinologist"
+    },
+
+    "hyperthyroidism": {
+        "aliases": ["overactive thyroid", "hyperthyroidism", "graves disease"],
+        "symptoms": "weight loss, palpitations, heat intolerance, anxiety, tremors",
+        "medicines": "Anti-thyroid medications, beta-blockers, sometimes surgery",
+        "precautions": "Regular monitoring, avoid excessive iodine intake",
+        "serious": True,
+        "specialist": "Endocrinologist"
+    },
+
+    "allergic rhinitis": {
+        "aliases": ["hay fever", "allergic rhinitis", "nasal allergy"],
+        "symptoms": "sneezing, runny nose, itchy eyes, congestion",
+        "medicines": "Antihistamines, nasal corticosteroids, decongestants",
+        "precautions": "Avoid allergens, keep environment clean",
+        "serious": False,
+        "specialist": "Allergist / ENT Specialist"
+    },
+
+    "otitis media": {
+        "aliases": ["middle ear infection", "otitis media", "ear infection"],
+        "symptoms": "ear pain, fever, irritability, hearing loss in children",
+        "medicines": "Analgesics, antibiotics if bacterial, sometimes drainage",
+        "precautions": "Treat colds promptly, avoid smoke exposure",
+        "serious": False,
+        "specialist": "ENT Specialist"
+    },
+
+    "sinusitis": {
+        "aliases": ["sinus infection", "sinusitis"],
+        "symptoms": "facial pain, nasal congestion, headache, fever, nasal discharge",
+        "medicines": "Saline irrigation, decongestants, antibiotics if bacterial",
+        "precautions": "Stay hydrated, treat allergies, avoid smoke",
+        "serious": False,
+        "specialist": "ENT Specialist"
+    },
+
+    "chronic kidney disease": {
+        "aliases": ["ckd", "chronic kidney disease", "renal failure"],
+        "symptoms": "fatigue, swelling, high blood pressure, changes in urination",
+        "medicines": "Blood pressure control, dialysis, sometimes transplantation",
+        "precautions": "Regular checkups, avoid nephrotoxic drugs",
+        "serious": True,
+        "specialist": "Nephrologist"
+    },
+
+    "heart attack": {
+        "aliases": ["myocardial infarction", "heart attack", "mi"],
+        "symptoms": "chest pain, shortness of breath, sweating, nausea",
+        "medicines": "Emergency medical treatment, anticoagulants, surgery if needed",
+        "precautions": "Control risk factors, healthy lifestyle, medications as prescribed",
+        "serious": True,
+        "specialist": "Cardiologist"
+    },
+
+    "stroke": {
+        "aliases": ["stroke", "cerebrovascular accident", "cva"],
+        "symptoms": "sudden weakness, numbness, difficulty speaking, vision problems",
+        "medicines": "Emergency care, thrombolysis, rehabilitation",
+        "precautions": "Control blood pressure, avoid smoking, healthy lifestyle",
+        "serious": True,
+        "specialist": "Neurologist"
+    },
+
+    "alzheimers disease": {
+        "aliases": ["alzheimers", "dementia", "memory loss"],
+        "symptoms": "memory loss, confusion, difficulty completing tasks, personality changes",
+        "medicines": "Cognitive therapy, medications like cholinesterase inhibitors",
+        "precautions": "Mental stimulation, safety measures at home",
+        "serious": True,
+        "specialist": "Neurologist / Geriatrician"
+    },
+
+    "parkinson's disease": {
+        "aliases": ["parkinson", "parkinson's disease", "tremor disorder"],
+        "symptoms": "tremor, stiffness, slow movement, balance issues",
+        "medicines": "Levodopa, dopamine agonists, physiotherapy",
+        "precautions": "Regular exercise, fall prevention strategies",
+        "serious": True,
+        "specialist": "Neurologist"
+    },
+
+    "epilepsy": {
+        "aliases": ["epilepsy", "seizure disorder"],
+        "symptoms": "recurrent seizures, temporary confusion, staring spells",
+        "medicines": "Antiepileptic drugs, avoid seizure triggers",
+        "precautions": "Avoid driving during seizures, adhere to medication",
+        "serious": True,
+        "specialist": "Neurologist"
+    },
+
+    "food allergies": {
+        "aliases": ["food allergy", "allergic reaction"],
+        "symptoms": "rash, itching, swelling, difficulty breathing, nausea",
+        "medicines": "Antihistamines, epinephrine in severe cases",
+        "precautions": "Avoid allergen, read labels carefully",
+        "serious": True,
+        "specialist": "Allergist"
     }
+
+
 }
 
 # utility: build a simple keyword map for faster matching (optional)
